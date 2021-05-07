@@ -1,0 +1,106 @@
+/* Variables */
+:root {
+    --main-accent-color-primary--light: #e63946;
+    --main-accent-color-primary--dark: #B61624;
+    --main-accent-color-secondary: #a8dadc;
+    --main-font-color: #f1faee;
+    --main-bg-color-primary: #1d3557;
+    --main-bg-color-secondary: #457b9d;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: var(--main-font-color);
+    background-color: var(--main-bg-color-primary);
+}
+
+.logbook,
+.www {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.logbook.active,
+.www.active {
+    display: flex;
+}
+
+.logbook-select {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+
+.logbook__entry {
+    display: none;
+    max-width: 600px;
+}
+
+.logbook .logbook__entry:first-child .logbook__entry-details {
+    margin-left: 0;
+}
+
+.logbook__entry-heading {
+    text-align: center;
+    font-size: 24px;
+}
+
+.logbook__entry-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--main-bg-color-secondary);
+    min-width: 420px;
+}
+
+.logbook__entry-details {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    font-size: 21px;
+    font-weight: 900;
+    line-height: 34px;
+}
+
+.logbook__entry.visible {
+    display: block
+}
+
+.logbook__navigation {
+    margin: 35px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 150px;
+    cursor: pointer;
+}
+
+.logbook__navigation svg {
+    width: 35px;
+}
+
+.logbook-select .logbook-select__button {
+    margin: 5px 0;
+    padding: 10px 20px;
+    background-color: var(--main-accent-color-primary--light);
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.logbook-select .logbook-select__button:hover {
+    background-color: var(--main-accent-color-primary--dark);
+    transition: background-color .4s ease;
+}
+
+.logbook-select .logbook-select__button.active {
+    background-color: var(--main-accent-color-primary--dark);
+}

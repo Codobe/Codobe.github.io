@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Logbuch</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+    </style>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+<main>
+    <div id="logbook" class="logbook active">
+        <div class="logbook__container">
+            <div class="logbook__entry visible">
+                <h2 class="logbook__entry-heading">Ziel</h2>
+                <div class="logbook__entry-content">
+                    <div class="logbook__entry-details">
+                        <span>
+                            Laufen in meinen Alltag integrieren. Möglichst 3 mal pro Woche laufen gehen.
+                            Optional: Strecke von 10km erreichen
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="logbook__entry">
+                <h2 class="logbook__entry-heading">Tag 01</h2>
+                <div class="logbook__entry-content">
+                    <img src="img/Tag_01.png" width="200"/>
+                    <div class="logbook__entry-details">
+                        <span>Strecke: 5,02 km</span>
+                        <span>Dauer: 37:54 Min</span>
+                        <span>Pausen: 2</span>
+                    </div>
+                </div>
+            </div>
+            <div class="logbook__entry">
+                <h2 class="logbook__entry-heading">Tag 02</h2>
+                <div class="logbook__entry-content">
+                    <img src="img/Tag_02.png" width="200"/>
+                    <div class="logbook__entry-details">
+                        <span>Strecke: 5,25 km</span>
+                        <span>Dauer: 37:24 Min</span>
+                        <span>Pausen: 2</span>
+                    </div>
+                </div>
+            </div>
+            <div class="logbook__entry">
+                <h2 class="logbook__entry-heading">Tag 03</h2>
+                <div class="logbook__entry-content">
+                    <img src="img/Tag_03.png" width="200"/>
+                    <div class="logbook__entry-details">
+                        <span>Strecke: 5,25 km</span>
+                        <span>Dauer: 33:36 Min</span>
+                        <span>Pausen: 0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="logbook__entry">
+                <h2 class="logbook__entry-heading">Tag 04</h2>
+                <div class="logbook__entry-content">
+                    <img src="img/Tag_04.png" width="200"/>
+                    <div class="logbook__entry-details">
+                        <span>Strecke: 5,25 km</span>
+                        <span>Dauer: 31:05 Min</span>
+                        <span>Pausen: 0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="logbook__navigation">
+            <div class="prev" data-logbook="logbook">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                     id="Layer_1" x="0px" y="0px" viewBox="0 0 407.436 407.436"
+                     style="enable-background:new 0 0 407.436 407.436;" xml:space="preserve">
+                    <polygon fill="#f1faee"
+                             points="315.869,21.178 294.621,0 91.566,203.718 294.621,407.436 315.869,386.258 133.924,203.718 "/>
+                </svg>
+            </div>
+            <div class="next" data-logbook="logbook">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                     id="Layer_1" x="0px" y="0px" viewBox="0 0 407.436 407.436"
+                     style="enable-background:new 0 0 407.436 407.436;" xml:space="preserve">
+                    <polygon fill="#f1faee"
+                             points="112.814,0 91.566,21.178 273.512,203.718 91.566,386.258 112.814,407.436 315.869,203.718 "/>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div id="www" class="www">
+        <div class="logbook__container">
+            <div class="logbook__entry visible">
+                <h2 class="logbook__entry-heading">What went well Tag 01, 18.04.</h2>
+                <div class="logbook__entry-content">
+                    <div class="logbook__entry-details">
+                        <ul>
+                            <li>Ausgeschlafen</li>
+                            <li>Viel für Prüfung gelernt</li>
+                            <li>Früh ins Bett</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="logbook__entry">
+                <h2 class="logbook__entry-heading">What went well Tag 02, 19.04.</h2>
+                <div class="logbook__entry-content">
+                    <div class="logbook__entry-details">
+                        <ul>
+                            <li>Früh aufgestanden</li>
+                            <li>Früh mit arbeiten begonnen</li>
+                            <li>Viel für Prüfung gelernt</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="logbook__entry">
+                <h2 class="logbook__entry-heading">What went well Tag 03, 20.04.</h2>
+                <div class="logbook__entry-content">
+                    <div class="logbook__entry-details">
+                        <ul>
+                            <li>Früh aufgestanden</li>
+                            <li>Früh mit arbeiten begonnen</li>
+                            <li>Viel für Prüfung gelernt</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="logbook__entry">
+                <h2 class="logbook__entry-heading">What went well Tag 04, 21.04.</h2>
+                <div class="logbook__entry-content">
+                    <div class="logbook__entry-details">
+                        <ul>
+                            <li>Früh aufgestanden</li>
+                            <li>Laufen gegangen</li>
+                            <li>Für Prüfung gelernt</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="logbook__entry">
+                <h2 class="logbook__entry-heading">What went well Tag 05, 22.04.</h2>
+                <div class="logbook__entry-content">
+                    <div class="logbook__entry-details">
+                        <ul>
+                            <li>Früh aufgestanden</li>
+                            <li>Für Prüfung gelernt</li>
+                            <li>Gute Note für Seminararbeit erhalten</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="logbook__entry">
+                <h2 class="logbook__entry-heading">What went well Tag 06, 23.04.</h2>
+                <div class="logbook__entry-content">
+                    <div class="logbook__entry-details">
+                        <ul>
+                            <li>Früh aufgestanden</li>
+                            <li>Letzte Prüfung geschrieben</li>
+                            <li>Danach nichts gemacht</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="logbook__entry">
+                <h2 class="logbook__entry-heading">What went well Tag 07, 24.04.</h2>
+                <div class="logbook__entry-content">
+                    <div class="logbook__entry-details">
+                        <ul>
+                            <li>Ausgeschlafen</li>
+                            <li>36 Fragen kennengelernt</li>
+                            <li>Abendessen mit Familie</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="logbook__entry">
+                <h2 class="logbook__entry-heading">What went well Tag 08, 25.04.</h2>
+                <div class="logbook__entry-content">
+                    <div class="logbook__entry-details">
+                        <ul>
+                            <li>Ausgeschlafen</li>
+                            <li>Zeit gehabt, um an persönlichen Projekten zu arbeiten</li>
+                            <li>Zocken mit Freunden</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="logbook__entry">
+                <h2 class="logbook__entry-heading">What went well Tag 09, 26.04.</h2>
+                <div class="logbook__entry-content">
+                    <div class="logbook__entry-details">
+                        <ul>
+                            <li>Früh aus dem Bett gekommen</li>
+                            <li>Auf neues Semester vorbereitet</li>
+                            <li>Gekocht, anstatt bestellen</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="logbook__entry">
+                <h2 class="logbook__entry-heading">What went well Tag 10, 27.04.</h2>
+                <div class="logbook__entry-content">
+                    <div class="logbook__entry-details">
+                        <ul>
+                            <li>Früh aufgestanden</li>
+                            <li>Sport gemacht</li>
+                            <li>Zeit mit Schwester verbracht</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="logbook__entry">
+                <h2 class="logbook__entry-heading">What went well Tag 11, 28.04.</h2>
+                <div class="logbook__entry-content">
+                    <div class="logbook__entry-details">
+                        <ul>
+                            <li>Keine Arbeit und Vorlesungen</li>
+                            <li>Deshalb ausgeschlafen</li>
+                            <li>Laufen gegangen</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="logbook__entry">
+                <h2 class="logbook__entry-heading">What went well Tag 12, 29.04.</h2>
+                <div class="logbook__entry-content">
+                    <div class="logbook__entry-details">
+                        <ul>
+                            <li>Früh mit Arbeiten begonnen</li>
+                            <li>Deshalb Abends viel Zeit</li>
+                            <li>Gekocht, anstatt bestellen</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="logbook__entry">
+                <h2 class="logbook__entry-heading">What went well Tag 13, 30.04.</h2>
+                <div class="logbook__entry-content">
+                    <div class="logbook__entry-details">
+                        <ul>
+                            <li>Früh aufgestanden</li>
+                            <li>Arbeitsprojekt abgeschlossen</li>
+                            <li>Zocken mit Freunden</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="logbook__entry">
+                <h2 class="logbook__entry-heading">What went well Tag 14, 01.05.</h2>
+                <div class="logbook__entry-content">
+                    <div class="logbook__entry-details">
+                        <ul>
+                            <li>Ausgeschlafen</li>
+                            <li>Viele Filme geschaut</li>
+                            <li>Essen mit Familie</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="logbook__entry">
+                <h2 class="logbook__entry-heading">What went well Tag 15, 02.05.</h2>
+                <div class="logbook__entry-content">
+                    <div class="logbook__entry-details">
+                        <ul>
+                            <li>Ausgeschlafen</li>
+                            <li>Zeit für persönliche Projekte gehabt</li>
+                            <li>Zocken mit Freunden</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="logbook__entry">
+                <h2 class="logbook__entry-heading">What went well Tag 16, 03.05.</h2>
+                <div class="logbook__entry-content">
+                    <div class="logbook__entry-details">
+                        <ul>
+                            <li>Früh aufgestanden</li>
+                            <li>Arbeit und andere Verpflichtungen unter einen Hut gebracht</li>
+                            <li>Gekocht, anstatt bestellen</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="logbook__entry">
+                <h2 class="logbook__entry-heading">What went well Tag 17, 04.05.</h2>
+                <div class="logbook__entry-content">
+                    <div class="logbook__entry-details">
+                        <ul>
+                            <li>Früh aufgestanden</li>
+                            <li>Endlich wieder laufen gegangen</li>
+                            <li>Zocken mit Freunden</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="logbook__entry">
+                <h2 class="logbook__entry-heading">What went well Tag 18, 05.05.</h2>
+                <div class="logbook__entry-content">
+                    <div class="logbook__entry-details">
+                        <ul>
+                            <li>Keine Arbeit und Vorlesungen</li>
+                            <li>Deshalb ausgeschlafen</li>
+                            <li>Seit langem mal wieder persönlich mit Freunden getroffen</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="logbook__entry">
+                <h2 class="logbook__entry-heading">What went well Tag 19, 06.05.</h2>
+                <div class="logbook__entry-content">
+                    <div class="logbook__entry-details">
+                        <ul>
+                            <li>Früh aufgestanden</li>
+                            <li>Viel Zeit für Arbeit gehabt</li>
+                            <li>Früh ins Bett</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="logbook__entry">
+                <h2 class="logbook__entry-heading">What went well Tag 20, 07.05.</h2>
+                <div class="logbook__entry-content">
+                    <div class="logbook__entry-details">
+                        <ul>
+                            <li>Früh aufgestanden</li>
+                            <li>Fortschritte beim Laufen</li>
+                            <li>Essen mit Familie</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="logbook__navigation">
+            <div class="prev" data-logbook="logbook">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                     id="Layer_1" x="0px" y="0px" viewBox="0 0 407.436 407.436"
+                     style="enable-background:new 0 0 407.436 407.436;" xml:space="preserve">
+                    <polygon fill="#f1faee"
+                             points="315.869,21.178 294.621,0 91.566,203.718 294.621,407.436 315.869,386.258 133.924,203.718 "/>
+                </svg>
+            </div>
+            <div class="next" data-logbook="logbook">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                     id="Layer_1" x="0px" y="0px" viewBox="0 0 407.436 407.436"
+                     style="enable-background:new 0 0 407.436 407.436;" xml:space="preserve">
+                    <polygon fill="#f1faee"
+                             points="112.814,0 91.566,21.178 273.512,203.718 91.566,386.258 112.814,407.436 315.869,203.718 "/>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div class="logbook-select">
+        <div class="logbook-select__button active" data-logbook="logbook">Logbuch</div>
+        <div class="logbook-select__button" data-logbook="www">What went well</div>
+    </div>
+</main>
+</body>
+</html>
